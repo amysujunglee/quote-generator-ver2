@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>IF / Else Statement exercise - Find stores near your area</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            position: absolute;
+            top: 20%;
+            left: 0;
+            text-align: center;
+        }
+
+        button {
+            width: auto;
+            height: 30px;
+            border: 0;
+            border-radius: 3px;
+            background-color: darkred;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        .bur {
+            background-color: darkcyan;
+        }
+
+        .new {
+            background-color: darkolivegreen;
+        }
+
+        #today-quote {
+            margin-bottom: 50px;
+        }
+        .quotes-by-cat {
+/*            margin-top: 50px;*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Today's Quote</h1>
+        <div id="today-quote"></div>
+        <div class="quotes-by-cat">
+            <button onclick="findQuotes()">UX</button>
+            <button class="bur" onclick="">People &amp; User</button>
+            <button class="new" onclick="">Design</button>
+            <div id="quote-list"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
